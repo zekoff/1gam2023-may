@@ -10,6 +10,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 238791486559853
+		},
+		{
+			"name": "timeRemaining",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 567586003915422
 		}
 	],
 	"behaviorTypes": [],

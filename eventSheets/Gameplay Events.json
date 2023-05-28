@@ -106,6 +106,15 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"music\""
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 730002352144219,
+					"parameters": {
+						"instance-variable": "timeRemaining",
+						"value": "45"
+					}
 				}
 			],
 			"sid": 514667305197234,
@@ -159,6 +168,151 @@
 					"sid": 700885850824452
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 107892457466363
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 141343083185267,
+					"parameters": {
+						"instance-variable": "timeRemaining",
+						"value": "dt"
+					}
+				}
+			],
+			"sid": 136148325475303
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 740415358549804,
+					"parameters": {
+						"instance-variable": "timeRemaining",
+						"comparison": 2,
+						"value": "15"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 833299725789241
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 333122056686446,
+					"parameters": {
+						"tag": "\"music\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 517785122693602,
+					"parameters": {
+						"audio-file": "1gam-may-shortime",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"music\""
+					}
+				}
+			],
+			"sid": 268764384692642,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BasicUiText",
+							"sid": 643614356620427,
+							"parameters": {
+								"instance-variable": "handle",
+								"comparison": 0,
+								"value": "\"timeRemaining\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "BasicUiText",
+							"sid": 293127130593997,
+							"parameters": {
+								"color": "rgbEx(100, 0, 0)"
+							}
+						}
+					],
+					"sid": 121134039257220
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Player",
+					"sid": 362581653877688,
+					"parameters": {
+						"instance-variable": "timeRemaining",
+						"comparison": 2,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 321533905583239
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 201752293706345,
+					"parameters": {
+						"tag": "\"music\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 172032884624946,
+					"parameters": {
+						"audio-file": "1gam-may-fanfare",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"music\""
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 669394098743125,
+					"parameters": {
+						"group-name": "\"Controls\"",
+						"state": "deactivated"
+					}
+				}
+			],
+			"sid": 859923973138250
 		},
 		{
 			"eventType": "block",
@@ -759,6 +913,37 @@
 						}
 					],
 					"sid": 188329080021623
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 207120594810980
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BasicUiText",
+							"sid": 981846344228362,
+							"parameters": {
+								"instance-variable": "handle",
+								"comparison": 0,
+								"value": "\"timeRemaining\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "BasicUiText",
+							"sid": 768286948882626,
+							"parameters": {
+								"text": "\"TIME REMAINING: \" & ceil(Player.timeRemaining)"
+							}
+						}
+					],
+					"sid": 280747723904224
 				}
 			],
 			"sid": 501477558681412
