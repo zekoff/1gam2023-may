@@ -1,0 +1,11 @@
+{
+	"name": "Boppable",
+	"plugin-id": "Sprite",
+	"sid": 403679042336809,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BasicAnimal"
+	]
+}

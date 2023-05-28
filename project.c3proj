@@ -8,8 +8,22 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -21,9 +35,30 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -40,7 +75,10 @@
 			"HoleBottomMask",
 			"HoleTopMask",
 			"HoleBottom",
-			"HoleMask"
+			"HoleMask",
+			"Touch",
+			"Keyboard",
+			"BasicUiText"
 		],
 		"subfolders": []
 	},
@@ -55,7 +93,9 @@
 		}
 	],
 	"families": {
-		"items": [],
+		"items": [
+			"Boppable"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -67,7 +107,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Gameplay Events",
+			"Constants"
 		],
 		"subfolders": []
 	},
@@ -180,7 +221,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "scale-outer",
+		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [

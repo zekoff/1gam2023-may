@@ -1,0 +1,56 @@
+{
+	"name": "Constants",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "POP_TIME",
+			"type": "number",
+			"initialValue": "0.2",
+			"comment": "Amount of time (s) it takes to reveal/hide animal.",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 876595065848541
+		},
+		{
+			"eventType": "variable",
+			"name": "BOP_ANIMATION_TIME",
+			"type": "number",
+			"initialValue": "0.2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 401774315323979
+		},
+		{
+			"eventType": "variable",
+			"name": "REVEALED_Y_OFFSET",
+			"type": "number",
+			"initialValue": "-70",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 288160550288949
+		},
+		{
+			"eventType": "variable",
+			"name": "HIDDEN_Y_OFFSET",
+			"type": "number",
+			"initialValue": "150",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 266158176022383
+		},
+		{
+			"eventType": "variable",
+			"name": "BASIC_REACTION_FLOOR",
+			"type": "number",
+			"initialValue": "0.25",
+			"comment": "Amount of time (s) for visual stimulus to provoke action.",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 407684848866917
+		}
+	],
+	"sid": 911784462896789
+}
