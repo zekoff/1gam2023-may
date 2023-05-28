@@ -76,21 +76,30 @@
 			"conditions": [],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "BasicAnimal",
+					"sid": 195706120545210,
+					"parameters": {
+						"animation": "choose(\"Buffalo\", \"Yak\", \"Walrus\")",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "stop-tweens",
 					"objectClass": "BasicAnimal",
-					"sid": 293084319890892,
+					"sid": 832335508771357,
 					"behaviorType": "Tween",
 					"parameters": {
-						"tags": "\"exposure\""
+						"tags": "\"reveal exposure\""
 					}
 				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "BasicAnimal",
-					"sid": 149355766705656,
+					"sid": 371072272170742,
 					"behaviorType": "Tween",
 					"parameters": {
-						"tags": "\"exposure\"",
+						"tags": "\"reveal exposure\"",
 						"property": "offsetY",
 						"end-value": "BasicAnimal.initialY - 70",
 						"time": "POP_TIME",
@@ -99,15 +108,6 @@
 						"loop": "no",
 						"ping-pong": "no",
 						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "BasicAnimal",
-					"sid": 777750168826424,
-					"parameters": {
-						"instance-variable": "exposed",
-						"value": "true"
 					}
 				}
 			],
@@ -119,14 +119,23 @@
 				{
 					"id": "on-tweens-finished",
 					"objectClass": "BasicAnimal",
-					"sid": 375748814332424,
+					"sid": 418890066682547,
 					"behaviorType": "Tween",
 					"parameters": {
-						"tags": "\"exposure\""
+						"tags": "\"reveal\""
 					}
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "BasicAnimal",
+					"sid": 578382221141581,
+					"parameters": {
+						"instance-variable": "exposed",
+						"value": "true"
+					}
+				},
 				{
 					"id": "start-timer",
 					"objectClass": "BasicAnimal",
@@ -156,19 +165,19 @@
 				{
 					"id": "stop-tweens",
 					"objectClass": "BasicAnimal",
-					"sid": 622990008345321,
+					"sid": 727521419825503,
 					"behaviorType": "Tween",
 					"parameters": {
-						"tags": "\"exposure\""
+						"tags": "\"reveal exposure\""
 					}
 				},
 				{
 					"id": "tween-one-property",
 					"objectClass": "BasicAnimal",
-					"sid": 888597906691059,
+					"sid": 501074099194083,
 					"behaviorType": "Tween",
 					"parameters": {
-						"tags": "\"exposure\"",
+						"tags": "\"hide exposure\"",
 						"property": "offsetY",
 						"end-value": "BasicAnimal.initialY +150",
 						"time": "POP_TIME",
@@ -363,9 +372,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 415950586005927,
+					"sid": 414368122758529,
 					"parameters": {
-						"interval-seconds": ".3"
+						"interval-seconds": ".5"
 					}
 				},
 				{
@@ -383,6 +392,13 @@
 					"parameters": {
 						"instance-variable": "exposed"
 					},
+					"isInverted": true
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "BasicAnimal",
+					"sid": 708740461553399,
+					"behaviorType": "Tween",
 					"isInverted": true
 				}
 			],
@@ -417,6 +433,19 @@
 					}
 				},
 				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 613268335953290,
+					"parameters": {
+						"object-to-create": "BopStarParticle",
+						"layer": "\"Play Area\"",
+						"x": "BasicAnimal.X",
+						"y": "BasicAnimal.Y",
+						"create-hierarchy": false,
+						"template-name": "\"Standard\""
+					}
+				},
+				{
 					"id": "stop-timer",
 					"objectClass": "BasicAnimal",
 					"sid": 463881628752092,
@@ -424,12 +453,6 @@
 					"parameters": {
 						"tag": "\"exposed\""
 					}
-				},
-				{
-					"customAction": "Hide",
-					"objectClass": "BasicAnimal",
-					"sid": 975614732192019,
-					"disabled": true
 				},
 				{
 					"id": "set-boolean-instvar",

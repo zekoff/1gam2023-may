@@ -65,6 +65,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 456964,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.5,
+								"y": 0.2662337662337662
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -88,6 +95,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 9576643,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.515625,
+								"y": 0.1328125
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -111,6 +125,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 1793895,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.4945652173913043,
+								"y": 0.28654970760233917
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -134,6 +155,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 6922417,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.49612403100775193,
+								"y": 0.12686567164179105
+							}
+						],
 						"duration": 1
 					}
 				],
@@ -157,6 +185,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 4154348,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.5117647058823529,
+								"y": 0.1640625
+							}
+						],
 						"duration": 1
 					}
 				],

@@ -1,0 +1,63 @@
+{
+	"name": "BopDuck",
+	"plugin-id": "Sprite",
+	"sid": 955399317447538,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 469757353095189
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 33,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2400521,
+						"collisionPoly": {
+							"points": [
+								0.4117647058823529,
+								0.42424242424242425,
+								0.5,
+								0.030303030303030304,
+								0.8823529411764706,
+								0.12121212121212122,
+								0.8529411764705882,
+								0.5,
+								0.8529411764705882,
+								0.8484848484848485,
+								0.5,
+								1,
+								0.11764705882352941,
+								0.8787878787878788,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 632792420449200,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

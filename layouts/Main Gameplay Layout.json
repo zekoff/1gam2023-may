@@ -80,8 +80,8 @@
 						}
 					},
 					"world": {
-						"x": 229,
-						"y": 299,
+						"x": 786,
+						"y": 1477,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -137,8 +137,8 @@
 						}
 					},
 					"world": {
-						"x": 561,
-						"y": 296,
+						"x": 1118,
+						"y": 1474,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -194,8 +194,8 @@
 						}
 					},
 					"world": {
-						"x": 886,
-						"y": 297,
+						"x": 1443,
+						"y": 1475,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -251,8 +251,8 @@
 						}
 					},
 					"world": {
-						"x": 226,
-						"y": 724,
+						"x": 783,
+						"y": 1902,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -308,8 +308,8 @@
 						}
 					},
 					"world": {
-						"x": 563,
-						"y": 731,
+						"x": 1120,
+						"y": 1909,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -365,8 +365,8 @@
 						}
 					},
 					"world": {
-						"x": 898,
-						"y": 743,
+						"x": 1455,
+						"y": 1921,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -422,8 +422,8 @@
 						}
 					},
 					"world": {
-						"x": 894,
-						"y": 1221,
+						"x": 1451,
+						"y": 2399,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -479,8 +479,8 @@
 						}
 					},
 					"world": {
-						"x": 570,
-						"y": 1217,
+						"x": 1127,
+						"y": 2395,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -536,8 +536,8 @@
 						}
 					},
 					"world": {
-						"x": 232,
-						"y": 1196,
+						"x": 789,
+						"y": 2374,
 						"width": 184,
 						"height": 154,
 						"originX": 0.5,
@@ -831,9 +831,9 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 0,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
 			"drawOrder": "z-order",
@@ -868,6 +868,41 @@
 						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Camera",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1119,
+						"y": 1902,
+						"width": 215,
+						"height": 80,
+						"originX": 0.5395348837209303,
+						"originY": 0.3875,
 						"color": [
 							1,
 							1,
