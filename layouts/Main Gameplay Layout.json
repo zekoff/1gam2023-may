@@ -50,6 +50,7 @@
 					},
 					"uid": 6,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -107,6 +108,7 @@
 					},
 					"uid": 7,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -164,6 +166,7 @@
 					},
 					"uid": 9,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -221,6 +224,7 @@
 					},
 					"uid": 10,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -278,6 +282,7 @@
 					},
 					"uid": 11,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -335,6 +340,7 @@
 					},
 					"uid": 12,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -392,6 +398,7 @@
 					},
 					"uid": 13,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -449,6 +456,7 @@
 					},
 					"uid": 14,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -506,6 +514,7 @@
 					},
 					"uid": 15,
 					"instanceVariables": {
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,

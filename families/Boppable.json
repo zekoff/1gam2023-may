@@ -2,7 +2,15 @@
 	"name": "Boppable",
 	"plugin-id": "Sprite",
 	"sid": 403679042336809,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "pointValue",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 649456829196645
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [

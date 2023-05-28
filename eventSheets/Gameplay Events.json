@@ -148,6 +148,29 @@
 			]
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 728191340320224
+				}
+			],
+			"actions": [
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 774072492475490,
+					"parameters": {
+						"mode": "stretch-scale-outer",
+						"navigation-ui": "auto"
+					}
+				}
+			],
+			"sid": 945963333934930,
+			"disabled": true
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Animal Events",
@@ -169,9 +192,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "BasicAnimal",
-							"sid": 939387622551012,
+							"sid": 975170601233197,
 							"parameters": {
-								"animation": "choose(\"Buffalo\", \"Yak\", \"Walrus\")",
+								"animation": "choose(\"Buffalo\", \"Yak\", \"Walrus\", \"Crocodile\")",
 								"from": "beginning"
 							}
 						},
@@ -230,10 +253,10 @@
 						{
 							"id": "start-timer",
 							"objectClass": "BasicAnimal",
-							"sid": 442663138223685,
+							"sid": 758347863703351,
 							"behaviorType": "Timer",
 							"parameters": {
-								"duration": "BASIC_REACTION_FLOOR + 2",
+								"duration": "BASIC_REACTION_FLOOR + random(0.25, 1)",
 								"type": "once",
 								"tag": "\"exposed\""
 							}
@@ -302,128 +325,186 @@
 					"functionParameters": [],
 					"eventType": "custom-ace-block",
 					"conditions": [],
-					"actions": [
+					"actions": [],
+					"sid": 505257254777352,
+					"children": [
 						{
-							"id": "add-to-instvar",
-							"objectClass": "Player",
-							"sid": 604927649346671,
-							"parameters": {
-								"instance-variable": "score",
-								"value": "1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BasicAnimal",
+									"sid": 343737725230802,
+									"parameters": {
+										"animation": "\"Crocodile\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 732944051743557,
+									"parameters": {
+										"audio-file": "Bad1",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 695231504313044,
+									"parameters": {
+										"instance-variable": "score",
+										"value": "BasicAnimal.pointValue * 5"
+									}
+								}
+							],
+							"sid": 953899962969817
 						},
 						{
-							"id": "play-by-name",
-							"objectClass": "Audio",
-							"sid": 707961847984449,
-							"parameters": {
-								"folder": "sounds",
-								"audio-file-name": "choose(\"Bop1\",\"Bop2\",\"Bop3\")",
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 485255061714658
+								}
+							],
+							"actions": [
+								{
+									"id": "play-by-name",
+									"objectClass": "Audio",
+									"sid": 143471037760593,
+									"parameters": {
+										"folder": "sounds",
+										"audio-file-name": "choose(\"Bop1\",\"Bop2\",\"Bop3\")",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Player",
+									"sid": 179106424428187,
+									"parameters": {
+										"instance-variable": "score",
+										"value": "BasicAnimal.pointValue"
+									}
+								}
+							],
+							"sid": 827458292331368
 						},
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 358646674537317,
-							"parameters": {
-								"object-to-create": "BopStarParticle",
-								"layer": "\"Play Area\"",
-								"x": "BasicAnimal.X",
-								"y": "BasicAnimal.Y + 20",
-								"create-hierarchy": false,
-								"template-name": "\"Standard\""
-							}
-						},
-						{
-							"id": "stop-timer",
-							"objectClass": "BasicAnimal",
-							"sid": 809604292288419,
-							"behaviorType": "Timer",
-							"parameters": {
-								"tag": "\"exposed\""
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "BasicAnimal",
-							"sid": 510843211425164,
-							"parameters": {
-								"instance-variable": "exposed",
-								"value": "false"
-							}
-						},
-						{
-							"id": "tween-one-property",
-							"objectClass": "BasicAnimal",
-							"sid": 405760351269381,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"bop\"",
-								"property": "offsetScaleY",
-								"end-value": ".5",
-								"time": "BOP_ANIMATION_TIME / 2",
-								"ease": "easeoutcubic",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "tween-one-property",
-							"objectClass": "BasicAnimal",
-							"sid": 992770393760971,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"bop\"",
-								"property": "offsetY",
-								"end-value": "BasicAnimal.Y + 80",
-								"time": "BOP_ANIMATION_TIME / 2",
-								"ease": "easeoutcubic",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 938290900028282
-						},
-						{
-							"id": "tween-one-property",
-							"objectClass": "BasicAnimal",
-							"sid": 249419599998568,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"bop\"",
-								"property": "offsetScaleY",
-								"end-value": "1",
-								"time": "BOP_ANIMATION_TIME / 2",
-								"ease": "default",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 635107659979424
-						},
-						{
-							"customAction": "Hide",
-							"objectClass": "BasicAnimal",
-							"sid": 168648584345420
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 199593777497867,
+									"parameters": {
+										"object-to-create": "BopStarParticle",
+										"layer": "\"Play Area\"",
+										"x": "BasicAnimal.X",
+										"y": "BasicAnimal.Y + 20",
+										"create-hierarchy": false,
+										"template-name": "\"Standard\""
+									}
+								},
+								{
+									"id": "stop-timer",
+									"objectClass": "BasicAnimal",
+									"sid": 553514355897673,
+									"behaviorType": "Timer",
+									"parameters": {
+										"tag": "\"exposed\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "BasicAnimal",
+									"sid": 942425590148803,
+									"parameters": {
+										"instance-variable": "exposed",
+										"value": "false"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "BasicAnimal",
+									"sid": 283826710181428,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"bop\"",
+										"property": "offsetScaleY",
+										"end-value": ".5",
+										"time": "BOP_ANIMATION_TIME / 2",
+										"ease": "easeoutcubic",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "BasicAnimal",
+									"sid": 918133007751624,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"bop\"",
+										"property": "offsetY",
+										"end-value": "BasicAnimal.Y + 80",
+										"time": "BOP_ANIMATION_TIME / 2",
+										"ease": "easeoutcubic",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 496751553143039
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "BasicAnimal",
+									"sid": 260186134544939,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"bop\"",
+										"property": "offsetScaleY",
+										"end-value": "1",
+										"time": "BOP_ANIMATION_TIME / 2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 590111882483206
+								},
+								{
+									"customAction": "Hide",
+									"objectClass": "BasicAnimal",
+									"sid": 389881097516512
+								}
+							],
+							"sid": 144587965903875
 						}
-					],
-					"sid": 505257254777352
+					]
 				},
 				{
 					"eventType": "block",
@@ -554,10 +635,10 @@
 								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
-									"sid": 879528188415561,
+									"sid": 995965882518404,
 									"parameters": {
 										"instance-variable": "score",
-										"value": "1"
+										"value": "10"
 									}
 								}
 							],

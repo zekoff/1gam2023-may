@@ -90,6 +90,7 @@
 					},
 					"uid": 3,
 					"instanceVariables": {
+						"pointValue": 1,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
