@@ -1,0 +1,37 @@
+{
+	"name": "HoleBottom",
+	"plugin-id": "Sprite",
+	"sid": 876888790296622,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 241,
+						"height": 47,
+						"originX": 0.48132780082987553,
+						"originY": 1.1102230246251565e-16,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7225840,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 783211248934977,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

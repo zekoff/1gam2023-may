@@ -1,12 +1,12 @@
 {
-	"name": "Layout 1",
+	"name": "Main Gameplay Layout",
 	"layers": [
 		{
-			"name": "Layer 0",
-			"overriden": 0,
+			"name": "Background",
+			"overriden": 1,
 			"subLayers": [],
 			"instances": [],
-			"sid": 144000552750572,
+			"sid": 722755442369165,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -33,9 +33,42 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Play Area",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 349691947301898,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": true,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
-	"sid": 552389845412457,
+	"sid": 180204575536782,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2160,

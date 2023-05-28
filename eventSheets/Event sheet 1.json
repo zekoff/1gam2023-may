@@ -1,5 +1,32 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 808708422416314
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 424910851786990,
+					"parameters": {
+						"object-to-create": "BasicAnimal",
+						"layer": "\"Play Area\"",
+						"x": "500",
+						"y": "1000",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 514667305197234
+		}
+	],
 	"sid": 116733532562148
 }
