@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -103,7 +110,9 @@
 			"Camera",
 			"BopDuck",
 			"BopStar",
-			"BopStarParticle"
+			"BopStarParticle",
+			"Audio",
+			"MissParticle"
 		],
 		"subfolders": []
 	},
@@ -143,7 +152,40 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Bop1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 604841544086025,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bop2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 522900593032484,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bop3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 781080477631004,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Miss1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 609407737889246,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
