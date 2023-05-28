@@ -94,7 +94,20 @@
 					"sid": 808708422416314
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 712582279674793,
+					"parameters": {
+						"audio-file": "1gam-may-gamplay",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"music\""
+					}
+				}
+			],
 			"sid": 514667305197234,
 			"children": [
 				{
@@ -201,10 +214,10 @@
 						{
 							"id": "stop-tweens",
 							"objectClass": "BasicAnimal",
-							"sid": 358189949902542,
+							"sid": 488990585795596,
 							"behaviorType": "Tween",
 							"parameters": {
-								"tags": "\"reveal exposure\""
+								"tags": "\"exposure\""
 							}
 						},
 						{
@@ -279,10 +292,10 @@
 						{
 							"id": "stop-tweens",
 							"objectClass": "BasicAnimal",
-							"sid": 658267274866347,
+							"sid": 687890112723712,
 							"behaviorType": "Tween",
 							"parameters": {
-								"tags": "\"reveal exposure\""
+								"tags": "\"exposure\""
 							}
 						},
 						{
@@ -344,11 +357,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 732944051743557,
+									"sid": 511467397393531,
 									"parameters": {
 										"audio-file": "Bad1",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "SOUND_EFFECT_DB",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -378,12 +391,12 @@
 								{
 									"id": "play-by-name",
 									"objectClass": "Audio",
-									"sid": 143471037760593,
+									"sid": 536639460331993,
 									"parameters": {
 										"folder": "sounds",
 										"audio-file-name": "choose(\"Bop1\",\"Bop2\",\"Bop3\")",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "SOUND_EFFECT_DB",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}

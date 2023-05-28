@@ -202,10 +202,10 @@
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "CherryBombOne-Regular",
 						"size": 36,
 						"line-height": 0,
-						"bold": true,
+						"bold": false,
 						"italic": false,
 						"color": [
 							0,

@@ -50,6 +50,16 @@
 			"isStatic": false,
 			"isConstant": true,
 			"sid": 407684848866917
+		},
+		{
+			"eventType": "variable",
+			"name": "SOUND_EFFECT_DB",
+			"type": "number",
+			"initialValue": "-10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 330134430751021
 		}
 	],
 	"sid": 911784462896789

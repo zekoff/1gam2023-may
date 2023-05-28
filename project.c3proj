@@ -205,7 +205,16 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "1gam-may-gamplay.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 260588727947728,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
@@ -213,7 +222,16 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "CherryBombOne-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 442259300715099,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
