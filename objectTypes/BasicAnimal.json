@@ -31,6 +31,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 133645752326828
+		},
+		{
+			"name": "initialScale",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 650679859609307
 		}
 	],
 	"behaviorTypes": [

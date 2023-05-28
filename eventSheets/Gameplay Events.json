@@ -110,10 +110,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Player",
-					"sid": 730002352144219,
+					"sid": 977923368444770,
 					"parameters": {
 						"instance-variable": "timeRemaining",
-						"value": "45"
+						"value": "30"
 					}
 				}
 			],
@@ -163,6 +163,15 @@
 								"animation": "choose(\"Buffalo\", \"Yak\", \"Walrus\")",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BasicAnimal",
+							"sid": 218841856608535,
+							"parameters": {
+								"instance-variable": "initialScale",
+								"value": "BasicAnimal.Height / BasicAnimal.ImageHeight"
+							}
 						}
 					],
 					"sid": 700885850824452
@@ -197,11 +206,11 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Player",
-					"sid": 740415358549804,
+					"sid": 816634390332998,
 					"parameters": {
 						"instance-variable": "timeRemaining",
 						"comparison": 2,
-						"value": "15"
+						"value": "10"
 					}
 				},
 				{
@@ -377,12 +386,12 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "BasicAnimal",
-							"sid": 956634219176549,
+							"sid": 933921102279209,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"reveal exposure\"",
 								"property": "offsetY",
-								"end-value": "BasicAnimal.initialY - 70",
+								"end-value": "BasicAnimal.initialY + REVEALED_Y_OFFSET",
 								"time": "POP_TIME",
 								"ease": "easeoutcubic",
 								"destroy-on-complete": "no",
@@ -455,12 +464,12 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "BasicAnimal",
-							"sid": 108844156255346,
+							"sid": 857468161251640,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"hide exposure\"",
 								"property": "offsetY",
-								"end-value": "BasicAnimal.initialY +150",
+								"end-value": "BasicAnimal.initialY + HIDDEN_Y_OFFSET",
 								"time": "POP_TIME",
 								"ease": "easeoutcubic",
 								"destroy-on-complete": "no",
@@ -605,12 +614,12 @@
 								{
 									"id": "tween-one-property",
 									"objectClass": "BasicAnimal",
-									"sid": 283826710181428,
+									"sid": 432703721717178,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"bop\"",
 										"property": "offsetScaleY",
-										"end-value": ".5",
+										"end-value": "0.5",
 										"time": "BOP_ANIMATION_TIME / 2",
 										"ease": "easeoutcubic",
 										"destroy-on-complete": "no",
@@ -644,12 +653,12 @@
 								{
 									"id": "tween-one-property",
 									"objectClass": "BasicAnimal",
-									"sid": 260186134544939,
+									"sid": 739421506255242,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"bop\"",
 										"property": "offsetScaleY",
-										"end-value": "1",
+										"end-value": "BasicAnimal.initialScale",
 										"time": "BOP_ANIMATION_TIME / 2",
 										"ease": "default",
 										"destroy-on-complete": "no",

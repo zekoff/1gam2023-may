@@ -382,5 +382,5 @@
 	},
 	"viewportWidth": 1080,
 	"viewportHeight": 1920,
-	"firstLayout": null
+	"firstLayout": "Main Gameplay Layout"
 }

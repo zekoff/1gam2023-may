@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "HIDDEN_Y_OFFSET",
 			"type": "number",
-			"initialValue": "150",
+			"initialValue": "170",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -58,7 +58,7 @@
 			"initialValue": "-10",
 			"comment": "",
 			"isStatic": false,
-			"isConstant": false,
+			"isConstant": true,
 			"sid": 330134430751021
 		}
 	],
