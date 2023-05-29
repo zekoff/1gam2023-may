@@ -1202,9 +1202,17 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 670212160369532,
+					"sid": 855853518937321,
 					"parameters": {
-						"interval-seconds": ".5"
+						"interval-seconds": "1"
+					}
+				},
+				{
+					"id": "repeat",
+					"objectClass": "System",
+					"sid": 684784874941685,
+					"parameters": {
+						"count": "ceil(random(0,3))"
 					}
 				},
 				{
