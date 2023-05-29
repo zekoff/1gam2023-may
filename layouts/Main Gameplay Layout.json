@@ -3090,7 +3090,14 @@
 					"uid": 2,
 					"instanceVariables": {
 						"score": 0,
-						"timeRemaining": 30
+						"timeRemaining": 30,
+						"difficulty": 0,
+						"hitValue": 10,
+						"missValue": 0,
+						"revealDuration": 2,
+						"bonusTargetProbability": 10,
+						"badTargetProbability": 20,
+						"superBonusSpawnTime": 10
 					},
 					"behaviors": {},
 					"world": {

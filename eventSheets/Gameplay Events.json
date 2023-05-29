@@ -400,6 +400,16 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "variable",
+					"name": "animalType",
+					"type": "string",
+					"initialValue": "Buffalo",
+					"comment": "The type of animal (animation) that will be revealed.",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 436914209333957
+				},
+				{
 					"aceType": "action",
 					"aceName": "Reveal",
 					"objectClass": "BasicAnimal",
@@ -410,44 +420,129 @@
 					"functionParameters": [],
 					"eventType": "custom-ace-block",
 					"conditions": [],
-					"actions": [
+					"actions": [],
+					"sid": 291193567509411,
+					"children": [
 						{
-							"id": "set-animation",
-							"objectClass": "BasicAnimal",
-							"sid": 975170601233197,
-							"parameters": {
-								"animation": "choose(\"Buffalo\", \"Yak\", \"Walrus\", \"Crocodile\")",
-								"from": "beginning"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "evaluate-expression",
+									"objectClass": "System",
+									"sid": 884092891698483,
+									"parameters": {
+										"value": "random(100) < Player.bonusTargetProbability"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 670705443611157,
+									"parameters": {
+										"variable": "animalType",
+										"value": "\"Pig\""
+									}
+								}
+							],
+							"sid": 379415173265233
 						},
 						{
-							"id": "stop-tweens",
-							"objectClass": "BasicAnimal",
-							"sid": 488990585795596,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"exposure\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 811396905255169
+								},
+								{
+									"id": "evaluate-expression",
+									"objectClass": "System",
+									"sid": 657266586913225,
+									"parameters": {
+										"value": "random(100) < Player.badTargetProbability"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 442552500557912,
+									"parameters": {
+										"variable": "animalType",
+										"value": "\"Crocodile\""
+									}
+								}
+							],
+							"sid": 501263945128098
 						},
 						{
-							"id": "tween-one-property",
-							"objectClass": "BasicAnimal",
-							"sid": 933921102279209,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"reveal exposure\"",
-								"property": "offsetY",
-								"end-value": "BasicAnimal.initialY + REVEALED_Y_OFFSET",
-								"time": "POP_TIME",
-								"ease": "easeoutcubic",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 985183126403210
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 446254598453467,
+									"parameters": {
+										"variable": "animalType",
+										"value": "choose(\"Buffalo\", \"Yak\", \"Walrus\")"
+									}
+								}
+							],
+							"sid": 372274714667629
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "BasicAnimal",
+									"sid": 526145307310308,
+									"parameters": {
+										"animation": "animalType",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "stop-tweens",
+									"objectClass": "BasicAnimal",
+									"sid": 228501354649298,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"exposure\""
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "BasicAnimal",
+									"sid": 574580023057914,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"reveal exposure\"",
+										"property": "offsetY",
+										"end-value": "BasicAnimal.initialY + REVEALED_Y_OFFSET",
+										"time": "POP_TIME",
+										"ease": "easeoutcubic",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 660224888606891
 						}
-					],
-					"sid": 291193567509411
+					]
 				},
 				{
 					"eventType": "block",
@@ -475,10 +570,10 @@
 						{
 							"id": "start-timer",
 							"objectClass": "BasicAnimal",
-							"sid": 758347863703351,
+							"sid": 526075293370294,
 							"behaviorType": "Timer",
 							"parameters": {
-								"duration": "BASIC_REACTION_FLOOR + random(0.25, 1)",
+								"duration": "BASIC_REACTION_FLOOR + random(Player.revealDuration * 0.5, Player.revealDuration * 1.5)",
 								"type": "once",
 								"tag": "\"exposed\""
 							}
@@ -556,6 +651,49 @@
 								{
 									"id": "is-animation-playing",
 									"objectClass": "BasicAnimal",
+									"sid": 829133212931718,
+									"parameters": {
+										"animation": "\"Pig\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play-by-name",
+									"objectClass": "Audio",
+									"sid": 961606599179464,
+									"parameters": {
+										"folder": "sounds",
+										"audio-file-name": "choose(\"Bop1\",\"Bop2\",\"Bop3\")",
+										"loop": "not-looping",
+										"volume": "SOUND_EFFECT_DB",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Player",
+									"sid": 343830088046062,
+									"parameters": {
+										"instance-variable": "score",
+										"value": "Player.hitValue * 2"
+									}
+								}
+							],
+							"sid": 284370559293187
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 467759991808662
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "BasicAnimal",
 									"sid": 343737725230802,
 									"parameters": {
 										"animation": "\"Crocodile\""
@@ -578,10 +716,10 @@
 								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
-									"sid": 695231504313044,
+									"sid": 151106799786812,
 									"parameters": {
 										"instance-variable": "score",
-										"value": "BasicAnimal.pointValue * 5"
+										"value": "Player.hitValue * 2"
 									}
 								}
 							],
@@ -613,10 +751,10 @@
 								{
 									"id": "add-to-instvar",
 									"objectClass": "Player",
-									"sid": 179106424428187,
+									"sid": 338938213600073,
 									"parameters": {
 										"instance-variable": "score",
-										"value": "BasicAnimal.pointValue"
+										"value": "Player.hitValue"
 									}
 								}
 							],
@@ -857,10 +995,10 @@
 								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
-									"sid": 995965882518404,
+									"sid": 435765668178845,
 									"parameters": {
 										"instance-variable": "score",
-										"value": "10"
+										"value": "Player.missValue"
 									}
 								}
 							],

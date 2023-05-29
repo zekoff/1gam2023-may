@@ -17,6 +17,55 @@
 			"desc": "",
 			"show": true,
 			"sid": 567586003915422
+		},
+		{
+			"name": "difficulty",
+			"type": "number",
+			"desc": "0 for friendly, 1 for carnival.",
+			"show": true,
+			"sid": 950436405592444
+		},
+		{
+			"name": "hitValue",
+			"type": "number",
+			"desc": "Number of points to award for hitting a target.",
+			"show": true,
+			"sid": 853771495013317
+		},
+		{
+			"name": "missValue",
+			"type": "number",
+			"desc": "Number of points to subtract for missing a target.",
+			"show": true,
+			"sid": 486939719870810
+		},
+		{
+			"name": "revealDuration",
+			"type": "number",
+			"desc": "Average time (s) for a revealed animal to stay onscreen.",
+			"show": true,
+			"sid": 274116980205760
+		},
+		{
+			"name": "bonusTargetProbability",
+			"type": "number",
+			"desc": "Chance out of 100 that a revealed target will be a bonus target (pig).",
+			"show": true,
+			"sid": 880915724069827
+		},
+		{
+			"name": "badTargetProbability",
+			"type": "number",
+			"desc": "Chance out of 100 that a revealed target will be a bad target (crocodile).",
+			"show": true,
+			"sid": 497507279309449
+		},
+		{
+			"name": "superBonusSpawnTime",
+			"type": "number",
+			"desc": "Average time (s) between super-bonus spawns (ducks).",
+			"show": true,
+			"sid": 544692091857613
 		}
 	],
 	"behaviorTypes": [],
