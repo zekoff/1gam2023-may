@@ -21,27 +21,20 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 704574973492543,
-					"disabled": true,
-					"parameters": {
-						"seconds": "3"
-					}
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 722277335098920
 				},
 				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 266816017820009,
-					"disabled": true
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 371077462223212,
-					"disabled": true,
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 622151002487014,
 					"parameters": {
-						"layout": "Main Gameplay Layout"
+						"audio-file": "1gam-may-shortime",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"music\""
 					}
 				}
 			],
@@ -54,9 +47,20 @@
 					"id": "on-tap",
 					"objectClass": "Touch",
 					"sid": 467578917973877
+				},
+				{
+					"id": "is-any-playing",
+					"objectClass": "TimelineController",
+					"sid": 842248327073563,
+					"isInverted": true
 				}
 			],
 			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 608131048797725
+				},
 				{
 					"id": "stop-all-timelines",
 					"objectClass": "TimelineController",

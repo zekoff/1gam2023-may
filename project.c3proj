@@ -131,7 +131,9 @@
 			"CurtainLong",
 			"CurtainSide",
 			"CurtainTop",
-			"TimelineController"
+			"TimelineController",
+			"TitleHeader",
+			"TitleAnimal"
 		],
 		"subfolders": []
 	},
@@ -163,7 +165,8 @@
 		"items": [
 			"Gameplay Events",
 			"Constants",
-			"Title Events"
+			"Title Events",
+			"Curtain Events"
 		],
 		"subfolders": []
 	},

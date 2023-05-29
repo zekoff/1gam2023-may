@@ -39,7 +39,7 @@
 				"offsetWidth": 300,
 				"useColor": true,
 				"colorSet": false,
-				"relativeFlags": 1599
+				"relativeFlags": 1983
 			},
 			"keyframes": [
 				{
@@ -101,7 +101,7 @@
 				"resultMode": "default",
 				"ease": "default",
 				"pathMode": "default",
-				"resizeMode": "",
+				"resizeMode": "default",
 				"expanded": true,
 				"name": "Property Track Folder",
 				"items": [],
@@ -125,7 +125,7 @@
 				"offsetWidth": 300,
 				"useColor": true,
 				"colorSet": false,
-				"relativeFlags": 1599
+				"relativeFlags": 1983
 			},
 			"keyframes": [
 				{
@@ -187,7 +187,7 @@
 				"resultMode": "default",
 				"ease": "default",
 				"pathMode": "default",
-				"resizeMode": "",
+				"resizeMode": "default",
 				"expanded": true,
 				"name": "Property Track Folder",
 				"items": [],
@@ -211,7 +211,7 @@
 				"offsetY": 1893,
 				"useColor": true,
 				"colorSet": false,
-				"relativeFlags": 1663
+				"relativeFlags": 1919
 			},
 			"keyframes": [
 				{
@@ -293,7 +293,7 @@
 				"resultMode": "default",
 				"ease": "default",
 				"pathMode": "default",
-				"resizeMode": "",
+				"resizeMode": "default",
 				"expanded": true,
 				"name": "Property Track Folder",
 				"items": [],

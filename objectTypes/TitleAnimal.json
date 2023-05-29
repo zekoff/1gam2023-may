@@ -1,0 +1,211 @@
+{
+	"name": "TitleAnimal",
+	"plugin-id": "Sprite",
+	"sid": 271706858058626,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "initialX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 748617434200191
+		},
+		{
+			"name": "initialY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 596419513254834
+		},
+		{
+			"name": "exposed",
+			"type": "boolean",
+			"desc": "Whether the animal is exposed or hidden.",
+			"show": true,
+			"sid": 413677431259646
+		},
+		{
+			"name": "positionKey",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 487343999633279
+		},
+		{
+			"name": "initialScale",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 483942909707338
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "TiltSine",
+			"sid": 123093386491967
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "MoveSine",
+			"sid": 440070677360086
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 184,
+						"height": 154,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4581750,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.5,
+								"y": 0.2662337662337662
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 925019461843321,
+				"name": "Buffalo",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 155124,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.515625,
+								"y": 0.1328125
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 563799963342057,
+				"name": "Crocodile",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 184,
+						"height": 171,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5892058,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.4945652173913043,
+								"y": 0.28654970760233917
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 509527415581206,
+				"name": "Yak",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 129,
+						"height": 134,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3205532,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.49612403100775193,
+								"y": 0.12686567164179105
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 217766788552433,
+				"name": "Walrus",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 170,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5440160,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Bop",
+								"x": 0.5117647058823529,
+								"y": 0.1640625
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 957959201293601,
+				"name": "Pig",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
