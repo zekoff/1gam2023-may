@@ -115,6 +115,15 @@
 						"instance-variable": "timeRemaining",
 						"value": "30"
 					}
+				},
+				{
+					"id": "play-timeline",
+					"objectClass": "TimelineController",
+					"sid": 188382163494282,
+					"parameters": {
+						"timeline": "OpenCurtains",
+						"tags": "\"\""
+					}
 				}
 			],
 			"sid": 514667305197234,
@@ -319,9 +328,46 @@
 						"group-name": "\"Controls\"",
 						"state": "deactivated"
 					}
+				},
+				{
+					"id": "play-timeline",
+					"objectClass": "TimelineController",
+					"sid": 505419855971680,
+					"parameters": {
+						"timeline": "CloseCurtains",
+						"tags": "\"\""
+					}
 				}
 			],
-			"sid": 859923973138250
+			"sid": 859923973138250,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BasicUiText",
+							"sid": 380212863765580,
+							"parameters": {
+								"instance-variable": "handle",
+								"comparison": 0,
+								"value": "\"timeRemaining\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BasicUiText",
+							"sid": 412417299250475,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 806470966920191
+				}
+			]
 		},
 		{
 			"eventType": "block",

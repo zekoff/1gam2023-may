@@ -1,0 +1,92 @@
+{
+	"name": "Title Events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 821924400623572
+				}
+			],
+			"actions": [
+				{
+					"id": "play-timeline",
+					"objectClass": "TimelineController",
+					"sid": 295142295470018,
+					"parameters": {
+						"timeline": "OpenCurtains",
+						"tags": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 704574973492543,
+					"disabled": true,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 266816017820009,
+					"disabled": true
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 371077462223212,
+					"disabled": true,
+					"parameters": {
+						"layout": "Main Gameplay Layout"
+					}
+				}
+			],
+			"sid": 596223978315162
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Touch",
+					"sid": 467578917973877
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all-timelines",
+					"objectClass": "TimelineController",
+					"sid": 654290128059714
+				},
+				{
+					"id": "play-timeline",
+					"objectClass": "TimelineController",
+					"sid": 918194240130779,
+					"parameters": {
+						"timeline": "CloseCurtains",
+						"tags": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 624330999821561
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 425943626764781,
+					"parameters": {
+						"layout": "Main Gameplay Layout"
+					}
+				}
+			],
+			"sid": 951416446770582
+		}
+	],
+	"sid": 189663176276866
+}

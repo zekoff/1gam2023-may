@@ -2,7 +2,7 @@
 	"name": "Player",
 	"plugin-id": "Sprite",
 	"sid": 634063574034486,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "score",

@@ -1,0 +1,108 @@
+{
+	"name": "CurtainSide",
+	"plugin-id": "Sprite",
+	"sid": 660439343794775,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "initialWidth",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 678540432063318
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 131,
+						"height": 426,
+						"originX": 0,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2741458,
+						"collisionPoly": {
+							"points": [
+								0.030534351145038167,
+								0.009389671361502348,
+								0.5,
+								0,
+								0.9694656488549618,
+								0.009389671361502348,
+								0.16030534351145037,
+								0.5,
+								0.5419847328244275,
+								0.8591549295774648,
+								0.5,
+								0.9929577464788732,
+								0.07633587786259542,
+								0.9765258215962441,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 273179755394702,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 131,
+						"height": 426,
+						"originX": 1,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6300240,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.5,
+								0.9236641221374046,
+								0.9765258215962441,
+								0.5,
+								0.9929577464788732,
+								0.4580152671755725,
+								0.8591549295774648,
+								0.8396946564885497,
+								0.5,
+								0.03053435114503822,
+								0.009389671361502348,
+								0.5,
+								0,
+								0.9694656488549618,
+								0.009389671361502348
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 696356414100931,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

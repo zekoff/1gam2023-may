@@ -50,7 +50,7 @@
 					},
 					"uid": 13,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -119,6 +119,10 @@
 										"key": "instance-variable",
 										"state": [
 											{
+												"iv": "pointValue",
+												"state": false
+											},
+											{
 												"iv": "initialX",
 												"state": true
 											},
@@ -133,10 +137,6 @@
 											{
 												"iv": "positionKey",
 												"state": false
-											},
-											{
-												"iv": "pointValue",
-												"state": true
 											},
 											{
 												"iv": "initialScale",
@@ -326,7 +326,7 @@
 					},
 					"uid": 14,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -395,6 +395,10 @@
 										"key": "instance-variable",
 										"state": [
 											{
+												"iv": "pointValue",
+												"state": false
+											},
+											{
 												"iv": "initialX",
 												"state": true
 											},
@@ -409,10 +413,6 @@
 											{
 												"iv": "positionKey",
 												"state": false
-											},
-											{
-												"iv": "pointValue",
-												"state": true
 											},
 											{
 												"iv": "initialScale",
@@ -602,7 +602,7 @@
 					},
 					"uid": 15,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -671,6 +671,10 @@
 										"key": "instance-variable",
 										"state": [
 											{
+												"iv": "pointValue",
+												"state": false
+											},
+											{
 												"iv": "initialX",
 												"state": true
 											},
@@ -685,10 +689,6 @@
 											{
 												"iv": "positionKey",
 												"state": false
-											},
-											{
-												"iv": "pointValue",
-												"state": true
 											},
 											{
 												"iv": "initialScale",
@@ -878,7 +878,7 @@
 					},
 					"uid": 6,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -948,7 +948,7 @@
 										"state": [
 											{
 												"iv": "pointValue",
-												"state": true
+												"state": false
 											},
 											{
 												"iv": "initialX",
@@ -1154,7 +1154,7 @@
 					},
 					"uid": 7,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -1224,7 +1224,7 @@
 										"state": [
 											{
 												"iv": "pointValue",
-												"state": true
+												"state": false
 											},
 											{
 												"iv": "initialX",
@@ -1430,7 +1430,7 @@
 					},
 					"uid": 9,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -1500,7 +1500,7 @@
 										"state": [
 											{
 												"iv": "pointValue",
-												"state": true
+												"state": false
 											},
 											{
 												"iv": "initialX",
@@ -1706,7 +1706,7 @@
 					},
 					"uid": 10,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -1776,7 +1776,7 @@
 										"state": [
 											{
 												"iv": "pointValue",
-												"state": true
+												"state": false
 											},
 											{
 												"iv": "initialX",
@@ -1982,7 +1982,7 @@
 					},
 					"uid": 11,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -2052,7 +2052,7 @@
 										"state": [
 											{
 												"iv": "pointValue",
-												"state": true
+												"state": false
 											},
 											{
 												"iv": "initialX",
@@ -2258,7 +2258,7 @@
 					},
 					"uid": 12,
 					"instanceVariables": {
-						"pointValue": 1,
+						"pointValue": 5,
 						"initialX": 0,
 						"initialY": 0,
 						"exposed": false,
@@ -2328,7 +2328,7 @@
 										"state": [
 											{
 												"iv": "pointValue",
-												"state": true
+												"state": false
 											},
 											{
 												"iv": "initialX",
@@ -2698,7 +2698,7 @@
 											],
 											[
 												"w",
-												true
+												false
 											],
 											[
 												"h",
@@ -2718,7 +2718,7 @@
 											],
 											[
 												"sx",
-												true
+												false
 											],
 											[
 												"sy",
@@ -2768,9 +2768,9 @@
 						"replicasUIDs": null
 					},
 					"world": {
-						"x": 322,
+						"x": 290.5,
 						"y": 1756,
-						"width": 342,
+						"width": 499,
 						"height": 145,
 						"originX": 0,
 						"originY": 0,
@@ -2995,7 +2995,7 @@
 						"replicasUIDs": null
 					},
 					"world": {
-						"x": 154,
+						"x": 161,
 						"y": 68,
 						"width": 758,
 						"height": 145,
@@ -3041,6 +3041,39 @@
 			"global": false
 		},
 		{
+			"name": "Curtains",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 343381831200046,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 0,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Controllers",
 			"overriden": 0,
 			"subLayers": [],
@@ -3061,8 +3094,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": -346,
-						"y": 541,
+						"x": 4431,
+						"y": -457,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
