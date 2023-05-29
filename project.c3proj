@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 33600,
-	"name": "1gam2023-may",
+	"name": "Animal Bop",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -290,9 +290,33 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-16.png",
+					"name": "icon.png",
 					"type": "image/png",
-					"sid": 533241389560793,
+					"sid": 826693247582505,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "goat.png",
+					"type": "image/png",
+					"sid": 338659995386341,
+					"icon-info": {
+						"purpose": "app-icon-maskable"
+					}
+				},
+				{
+					"name": "icon-extra.png",
+					"type": "image/png",
+					"sid": 533746397928749,
+					"icon-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 482762921879351,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -300,49 +324,9 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 588217055720448,
+					"sid": 911951010307812,
 					"icon-info": {
 						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-32.png",
-					"type": "image/png",
-					"sid": 208441343634954,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-64.png",
-					"type": "image/png",
-					"sid": 550544834974439,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 717690931120788,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 119744536447905,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 540705128022795,
-					"icon-info": {
-						"purpose": "app-icon"
 					}
 				}
 			],
@@ -366,11 +350,11 @@
 		]
 	},
 	"properties": {
-		"description": "",
+		"description": "May's game for 1GAM 2023.",
 		"version": "1.0.0.0",
 		"author": "Michael Zekoff",
 		"authorEmail": "zekoff@gmail.com",
-		"authorWebsite": "",
+		"authorWebsite": "https://www.zekoff.com",
 		"appId": "",
 		"pixelRounding": false,
 		"zAxisScale": "normalized",
@@ -411,7 +395,7 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress-logo",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
