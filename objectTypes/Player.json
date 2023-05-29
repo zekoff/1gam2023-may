@@ -66,6 +66,13 @@
 			"desc": "Average time (s) between super-bonus spawns (ducks).",
 			"show": true,
 			"sid": 544692091857613
+		},
+		{
+			"name": "highscore",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 890593612738624
 		}
 	],
 	"behaviorTypes": [],

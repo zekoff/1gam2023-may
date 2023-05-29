@@ -184,6 +184,32 @@
 						}
 					],
 					"sid": 700885850824452
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BasicUiText",
+							"sid": 697771159340108,
+							"parameters": {
+								"instance-variable": "handle",
+								"comparison": 0,
+								"value": "\"finalScore\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BasicUiText",
+							"sid": 476883377984300,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 289233698338295
 				}
 			]
 		},
@@ -332,11 +358,16 @@
 				{
 					"id": "play-timeline",
 					"objectClass": "TimelineController",
-					"sid": 505419855971680,
+					"sid": 789743906641146,
 					"parameters": {
 						"timeline": "CloseCurtains",
 						"tags": "\"\""
 					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 760193106594419
 				}
 			],
 			"sid": 859923973138250,
@@ -347,11 +378,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "BasicUiText",
-							"sid": 380212863765580,
+							"sid": 278134816609035,
 							"parameters": {
 								"instance-variable": "handle",
 								"comparison": 0,
-								"value": "\"timeRemaining\""
+								"value": "\"finalScore\""
 							}
 						}
 					],
@@ -359,13 +390,88 @@
 						{
 							"id": "set-visible",
 							"objectClass": "BasicUiText",
-							"sid": 412417299250475,
+							"sid": 742574395979347,
 							"parameters": {
-								"visibility": "invisible"
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "BasicUiText",
+							"sid": 717567150362781,
+							"parameters": {
+								"text": "\"Final Score:\" & newline & Player.score"
 							}
 						}
 					],
-					"sid": 806470966920191
+					"sid": 806470966920191,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "evaluate-expression",
+									"objectClass": "System",
+									"sid": 378680642119030,
+									"parameters": {
+										"value": "Player.score > Player.highscore"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "append-text",
+									"objectClass": "BasicUiText",
+									"sid": 855817545552864,
+									"parameters": {
+										"text": "newline & newline & \"New high score!\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 244295687660164,
+									"parameters": {
+										"instance-variable": "highscore",
+										"value": "Player.score"
+									}
+								}
+							],
+							"sid": 768237834609521
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 620641825249091,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 844540463909039,
+							"parameters": {
+								"group-name": "\"Controls\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 977923946319580,
+							"parameters": {
+								"layout": "Title Layout"
+							}
+						}
+					],
+					"sid": 213968044694569
 				}
 			]
 		},

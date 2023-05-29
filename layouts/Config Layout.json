@@ -1546,10 +1546,6 @@
 										"key": "instance-variable",
 										"state": [
 											{
-												"iv": "pointValue",
-												"state": true
-											},
-											{
 												"iv": "initialX",
 												"state": true
 											},

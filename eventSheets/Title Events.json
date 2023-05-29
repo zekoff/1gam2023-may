@@ -36,9 +36,46 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"music\""
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 605579854792759,
+					"parameters": {
+						"instance-variable": "score",
+						"value": "0"
+					}
 				}
 			],
-			"sid": 596223978315162
+			"sid": 596223978315162,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BasicUiText",
+							"sid": 606842531877032,
+							"parameters": {
+								"instance-variable": "handle",
+								"comparison": 0,
+								"value": "\"highscore\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "BasicUiText",
+							"sid": 994239302468279,
+							"parameters": {
+								"text": "\"High Score: \" & Player.highscore"
+							}
+						}
+					],
+					"sid": 992426957053964
+				}
+			]
 		},
 		{
 			"eventType": "block",
