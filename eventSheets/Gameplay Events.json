@@ -987,6 +987,69 @@
 								{
 									"id": "pick-overlapping-point",
 									"objectClass": "System",
+									"sid": 471674989062387,
+									"parameters": {
+										"object": "BopDuck",
+										"x": "x",
+										"y": "y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play-by-name",
+									"objectClass": "Audio",
+									"sid": 488820611558289,
+									"parameters": {
+										"folder": "sounds",
+										"audio-file-name": "choose(\"Bop1\",\"Bop2\",\"Bop3\")",
+										"loop": "not-looping",
+										"volume": "SOUND_EFFECT_DB",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Player",
+									"sid": 783453758123027,
+									"parameters": {
+										"instance-variable": "score",
+										"value": "Player.hitValue * 3"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 223371724208660,
+									"parameters": {
+										"object-to-create": "BopStarParticle",
+										"layer": "\"Play Area\"",
+										"x": "x",
+										"y": "y",
+										"create-hierarchy": false,
+										"template-name": "\"Standard\""
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BopDuck",
+									"sid": 776658417955364
+								}
+							],
+							"sid": 951291466171931
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 428791215263496
+								},
+								{
+									"id": "pick-overlapping-point",
+									"objectClass": "System",
 									"sid": 295677283757001,
 									"parameters": {
 										"object": "BasicAnimal",
@@ -1248,6 +1311,191 @@
 				}
 			],
 			"sid": 892075520864959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-signal",
+					"objectClass": "System",
+					"sid": 271232365705665,
+					"parameters": {
+						"tag": "\"superBonusTarget\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 959154494063033,
+					"parameters": {
+						"object-to-create": "BopDuck",
+						"layer": "\"Play Area\"",
+						"x": "0",
+						"y": "random(1200, 2200)",
+						"create-hierarchy": false,
+						"template-name": "\"Standard\""
+					}
+				}
+			],
+			"sid": 895746639669267,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-last-created",
+							"objectClass": "System",
+							"sid": 786859232828383,
+							"parameters": {
+								"object": "BopDuck"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "BopDuck",
+							"sid": 585404219285681,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "random(400, 600)"
+							}
+						}
+					],
+					"sid": 535534303445012,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "evaluate-expression",
+									"objectClass": "System",
+									"sid": 239116370766733,
+									"parameters": {
+										"value": "random(100) < 50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "BopDuck",
+									"sid": 403289265874947,
+									"parameters": {
+										"x": "500"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "BopDuck",
+									"sid": 768375808981679,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "random(-30, 30)"
+									}
+								}
+							],
+							"sid": 119597798058517
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 398955600653608
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "BopDuck",
+									"sid": 450509924380298,
+									"parameters": {
+										"x": "1750"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "BopDuck",
+									"sid": 346684924793573,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "random(150, 210)"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "BopDuck",
+									"sid": 655270916835643,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 538254079014926
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "BopDuck",
+					"sid": 779635776127478,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "450"
+					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "BopDuck",
+					"sid": 955698328322240,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "1800"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "BopDuck",
+					"sid": 600429894199051
+				}
+			],
+			"sid": 803997708875319,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 113959242920436,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 646010881845041,
+					"parameters": {
+						"tag": "\"superBonusTarget\""
+					}
+				}
+			],
+			"sid": 262758833465773
 		}
 	],
 	"sid": 116733532562148

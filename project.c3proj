@@ -71,8 +71,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Orbit",
-			"name": "Orbit",
+			"id": "Bullet",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
