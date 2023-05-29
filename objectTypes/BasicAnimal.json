@@ -57,7 +57,20 @@
 			"sid": 159945756918375
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		},
+		{
+			"effectId": "glowvertical",
+			"name": "GlowVertical"
+		},
+		{
+			"effectId": "pulse",
+			"name": "Pulse"
+		}
+	],
 	"animations": {
 		"items": [
 			{

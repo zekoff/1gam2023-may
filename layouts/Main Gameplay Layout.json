@@ -207,7 +207,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -297,6 +345,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 1454,
@@ -483,7 +556,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -573,6 +694,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 1114,
@@ -759,7 +905,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -849,6 +1043,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 760,
@@ -1035,7 +1254,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -1125,6 +1392,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 1443,
@@ -1311,7 +1603,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -1401,6 +1741,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 1103,
@@ -1587,7 +1952,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -1677,6 +2090,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 749,
@@ -1863,7 +2301,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -1953,6 +2439,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 1455,
@@ -2139,7 +2650,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -2229,6 +2788,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 1115,
@@ -2415,7 +2999,55 @@
 							},
 							{
 								"id": "effect",
-								"component": []
+								"component": [
+									{
+										"key": "GlowHorizontal",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "GlowVertical",
+										"state": [
+											[
+												"intensity",
+												true
+											]
+										]
+									},
+									{
+										"key": "Pulse",
+										"state": [
+											[
+												"intensity",
+												false
+											],
+											[
+												"lighting",
+												true
+											],
+											[
+												"speed",
+												true
+											],
+											[
+												"frequency",
+												true
+											],
+											[
+												"center-x",
+												true
+											],
+											[
+												"center-y",
+												true
+											]
+										]
+									}
+								]
 							},
 							{
 								"id": "world-instance",
@@ -2505,6 +3137,31 @@
 							}
 						],
 						"replicasUIDs": null
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.5,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
 					},
 					"world": {
 						"x": 761,
@@ -3095,7 +3752,7 @@
 						"hitValue": 10,
 						"missValue": 0,
 						"revealDuration": 2,
-						"bonusTargetProbability": 10,
+						"bonusTargetProbability": 20,
 						"badTargetProbability": 20,
 						"superBonusSpawnTime": 10
 					},

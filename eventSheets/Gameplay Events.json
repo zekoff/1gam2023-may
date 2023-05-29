@@ -420,7 +420,35 @@
 					"functionParameters": [],
 					"eventType": "custom-ace-block",
 					"conditions": [],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "BasicAnimal",
+							"sid": 848953690327564,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "BasicAnimal",
+							"sid": 353544358346768,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"GlowVertical\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "BasicAnimal",
+							"sid": 878748928663678,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Pulse\""
+							}
+						}
+					],
 					"sid": 291193567509411,
 					"children": [
 						{
@@ -436,6 +464,33 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BasicAnimal",
+									"sid": 203138245074652,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"GlowHorizontal\""
+									}
+								},
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BasicAnimal",
+									"sid": 684263981486802,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"GlowVertical\""
+									}
+								},
+								{
+									"id": "set-effect-enabled",
+									"objectClass": "BasicAnimal",
+									"sid": 379684664748200,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"Pulse\""
+									}
+								},
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
